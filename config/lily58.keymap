@@ -18,6 +18,26 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+
+        l0 {
+            bindings = <&to 0>;
+            key-positions = <36 1>;
+        };
+
+        l1 {
+            bindings = <&to 1>;
+            key-positions = <36 2>;
+        };
+
+        l2 {
+            bindings = <&to 2>;
+            key-positions = <36 3>;
+        };
+
+        l3 {
+            bindings = <&to 3>;
+            key-positions = <36 4>;
+        };
     };
 
     behaviors {
@@ -117,6 +137,25 @@
 &kp LCTRL  &kp Z           &kp X           &kp C      &kp V     &kp B   &trans       &trans     &kp N     &kp M     &kp COMMA  &kp DOT   &kp FSLH  &trans
                                            &kp LALT   &kp LGUI  &mo 1   &kp SPACE    &kp ENTER  &mo 2     &kp BSPC  &kp LGUI
             >;
+        };
+
+        layer_4 {
+            bindings = <
+&kp GRAVE  &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                         &trans  &trans  &trans  &trans  &trans  &trans
+&kp MINUS  &kp Y   &kp U   &kp I      &kp O     &kp P                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp H   &kp J   &kp K      &kp L     &kp SEMI                       &trans  &trans  &trans  &trans  &trans  &trans
+&kp DEL    &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RBKT     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                           &kp RGUI   &kp BSPC  &trans    &kp ENTER    &trans  &trans  &trans  &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Layer3 {
+            if-layers = <1>;
+            then-layer = <2>;
         };
     };
 };
