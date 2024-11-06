@@ -22,31 +22,31 @@
         combo_l0 {
             bindings = <&to 0>;
             key-positions = <36 1>;
-            timeout-ms = <400>;
+            timeout-ms = <1000>;
         };
 
         combo_l1 {
             bindings = <&to 1>;
             key-positions = <36 2>;
-            timeout-ms = <400>;
+            timeout-ms = <1000>;
         };
 
         combo_l2 {
             bindings = <&to 2>;
             key-positions = <36 3>;
-            timeout-ms = <400>;
+            timeout-ms = <1000>;
         };
 
         combo_l3 {
             bindings = <&to 3>;
             key-positions = <36 4>;
-            timeout-ms = <400>;
+            timeout-ms = <1000>;
         };
 
         combo_l4 {
             bindings = <&to 4>;
             key-positions = <36 5>;
-            timeout-ms = <400>;
+            timeout-ms = <1000>;
         };
     };
 
